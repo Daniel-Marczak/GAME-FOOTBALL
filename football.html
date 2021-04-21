@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="football.css">
+</head>
+<body>
+
+
+<!-- FOOTBALL FIELD START -->
+<div class="football-field-container">
+  <div class="football-field"></diV>
+</div>
+<!-- FOOTBALL FIELD END -->
+
+<div class="move-backward-container">
+  <div class="move-backward-button-container-div">
+    <button type="button" class="move-backwards-btn hidden">BACKWARDS</button>
+  </div>
+</div>
+
+<!-- SCORE BORD START -->
+<div class="score-bord-container">
+
+  <!-- HOME TEAM START-->
+  <div class="home-team-container-div">
+    <div class="home-team-header">HOME</div>
+    <div class="team-name-div">
+      <label>
+        <input class="team-name-input" type="text" placeholder="Home team...">
+      </label>
+    </div>
+    <div class="timer-container-div">
+      <div class="home-timer-div">
+        <div class="home-timer-min timer-min">0</div>
+        <div class="timer-colon">:</div>
+        <div class="home-timer-sec timer-sec">00</div>
+      </div>
+    </div>
+    <div class="team-score">0</div>
+  </div>
+  <!-- HOME TEAM END-->
+
+  <!-- AWAY TEAM -->
+  <div class="away-team-container-div">
+    <div class="away-team-header">AWAY</div>
+    <div class="team-name-div">
+      <label>
+        <input class="team-name-input" type="text" placeholder="Away team...">
+      </label>
+    </div>
+    <div class="timer-container-div">
+      <div class="away-timer-div">
+        <div class="away-timer-min timer-min">0</div>
+        <div class="timer-colon">:</div>
+        <div class="away-timer-sec timer-sec">00</div>
+      </div>
+    </div>
+    <div class="team-score">0</div>
+  </div>
+  <!-- AWAY TEAM END-->
+
+  <!-- SETTINGS START -->
+  <div class="settings-container-div">
+    <div class="settings-timer-header-div">SET THE TIME DURATION OF THE MATCH </div>
+    <div class="settings-timer-div">
+      <label>
+        MINUTES: <input class="settings-timer-input" type="number" min="1" max="90">
+      </label>
+    </div>
+    <div class="settings-backwards-checkbox-div">
+      <label>
+        ALLOW TO MOVE BACKWARDS<input class="allow-backward-checkbox" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="settings-current-player-info-info-div">
+      <label>
+        SHOW "CURRENT PLAYER" INFO<input class="current-player-info-checkbox" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="settings-start-the-match-btn">
+      <button type="button" class="start-the-match-btn">START</button>
+    </div>
+  </div>
+  <!-- SETTINGS END -->
+
+</div>
+<!-- SCORE BORD END -->
+
+
+<script src="football.js"></script>
+</body>
+</html>
